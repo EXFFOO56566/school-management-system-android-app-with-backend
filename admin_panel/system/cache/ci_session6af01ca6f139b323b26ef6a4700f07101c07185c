@@ -1,0 +1,7 @@
+__ci_last_regenerate|i:1507113465;user_name|s:6:"school";logged_in|b:1;user_id|s:1:"7";user_type_id|s:1:"1";message|s:472:"<div class="alert alert-warning alert-dismissible" role="alert">
+                            <i class="fa fa-warning"></i>
+                            <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <strong>Warning!</strong> <p>The noti_title field is required.</p>
+<p>The noti_description field is required.</p>
+
+                            </div>";__ci_vars|a:1:{s:7:"message";s:3:"new";}

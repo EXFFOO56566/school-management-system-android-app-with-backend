@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#3981CB</color>
+    <color name="color_1">#3981CB</color>
+    <color name="color_2">#3981CB</color>
+    <color name="color_3">#3981CB</color>
+    <color name="color_4">#3981CB</color>
+    <color name="color_5">#3981CB</color>
+    <color name="color_6">#3981CB</color>
+    <color name="color_7">#3981CB</color>
+    <color name="color_8">#3981CB</color>
+    <color name="color_9">#3981CB</color>
+
+    <color name="color_11">#3981CB</color>
+    <color name="color_21">#3981CB</color>
+    <color name="color_31">#3981CB</color>
+    <color name="color_41">#3981CB</color>
+    <color name="color_51">#3981CB</color>
+    <color name="color_61">#3981CB</color>
+    <color name="color_71">#3981CB</color>
+    <color name="color_81">#3981CB</color>
+    <color name="color_91">#3981CB</color>
+    <color name="white1">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="calendar_bg">#ffffff</color>
+    <color name="calendar_text_color">#000000</color>
+    <color name="dialog_black">#414040</color>
+
+</resources>

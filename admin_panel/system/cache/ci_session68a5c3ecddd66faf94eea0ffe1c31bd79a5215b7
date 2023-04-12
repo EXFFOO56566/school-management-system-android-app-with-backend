@@ -1,0 +1,4 @@
+__ci_last_regenerate|i:1504356096;user_name|s:6:"school";logged_in|b:1;user_id|s:1:"7";user_type_id|s:1:"1";message|s:372:"<div class="alert alert-success alert-dismissible" role="alert">
+                                  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                  <strong>Success!</strong> Student Fees Added Successfully
+                                </div>";__ci_vars|a:1:{s:7:"message";s:3:"new";}

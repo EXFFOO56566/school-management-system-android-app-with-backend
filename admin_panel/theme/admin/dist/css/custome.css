@@ -1,0 +1,21 @@
+.red{
+    color: red;
+}
+.required_lable{
+    color:green;
+}
+/* student detail */
+.user-details {position: relative; padding: 10px;}
+.user-details .user-image {position: relative;  z-index: 1; width: 100%; text-align: center;}
+ .user-image img { clear: both; margin: auto; position: relative;}
+ .user-info-block .user-heading {width: 100%; text-align: center; margin: 10px 0 0;}
+ 
+ .fancy {
+  width: 350px;
+  margin: 0px auto;
+  padding: 20px;
+  border: solid blue 5px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_calendar"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/calendar_bg"
+    android:visibility="visible">
+
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/calendarLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#00000000"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="14dp"
+                android:src="@drawable/calendar_month_left" />
+
+            <TextView
+                android:id="@+id/calendarCenter"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="May 23"
+                android:textSize="16sp"
+                android:textColor="@color/calendar_text_color" />
+
+            <ImageButton
+                android:id="@+id/calendarRight"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="#00000000"
+                android:gravity="right|center_vertical"
+                android:paddingRight="14dp"
+                android:src="@drawable/calendar_month_right" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/topbar"
+        android:background="#BFBFBF" />
+
+    <RelativeLayout
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/line">
+
+        <com.e_school.calendarUtil.ScrollLayout
+            android:id="@+id/scrollLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="visible">
+
+            <com.e_school.CalendarView
+                android:id="@+id/calendar_left"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true" />
+
+            <com.e_school.CalendarView
+                android:id="@+id/calendar"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true" />
+
+            <com.e_school.CalendarView
+                android:id="@+id/calendar_right"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true" />
+
+        </com.e_school.calendarUtil.ScrollLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Absent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scroll"
+        android:layout_marginLeft="15dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/abnormal_corner" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:padding="12sp"
+                android:textColor="@color/dialog_black"
+                android:text="Absent" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Present"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Absent"
+        android:layout_marginLeft="15dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/signout_corner" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:padding="12sp"
+                android:textColor="@color/dialog_black"
+                android:text="Present" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/Holiday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Present"
+        android:layout_marginLeft="15dp"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/signleave_corner" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:padding="12sp"
+                android:textColor="@color/dialog_black"
+                android:text="Holiday" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
